@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    border: 10;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(7, 7, 7);
+    font-family: "Helvetica", "cursive";
+    padding: 10px;
+  }
+  
+  /* Media Query für mobile Geräte */
+  @media screen and (max-width: 600px) {
+    main{
+        flex-direction: column;
+    }
+    main>*{
+        order:0;
+    }
+
+}
+
+header {
+    height: 300px;
+    background: url(https://cdn.wallpapersafari.com/67/76/jBL6mO.jpg) no-repeat left top;
+}
+
+aside {
+    background: rgb(160, 15, 15);
+}
+
+nav {
+    background: rgb(21, 82, 205);
+}
+
+main {
+    background: rgba(181, 138, 103, 0.911); 
+}
+
+footer {
+    background: Wheat;
+    text-align: center;
+}
+
+header,
+main,
+nav,
+aside,
+footer {
+    margin: 0.25em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+/* CSS-Code für den Lernfortschritt und die Fortschrittsleiste */
+.progress-container {
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #1404ff;
+    transition: width 0.5s ease;
+  }
+  
+  .progress-filled {
+    background-color: red;
+  }
+  
+  .progress-label {
+    font-weight: bold;
+  }
